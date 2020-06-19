@@ -1,0 +1,175 @@
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()14:13:56 **** Incremental Build of configuration Build (GNU) for project Assignment 1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()00:26:35 **** Incremental Build of configuration Build (GNU) for project Assignment 1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+00:26:35 **** Build of configuration Debug for project SampleSocket ****
+make all 
+Building file: ../Client.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.d" -o "Client.o" "../Client.c"
+Finished building: ../Client.c
+ 
+Building file: ../NitinClient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"NitinClient.d" -MT"NitinClient.d" -o "NitinClient.o" "../NitinClient.c"
+../NitinClient.c: In function 'main':
+../NitinClient.c:25: error: incompatible type for argument 3 of 'inet_pton'
+../NitinClient.c:27: warning: passing argument 2 of 'connect' from incompatible pointer type
+../NitinClient.c:30: warning: format not a string literal and no format arguments
+../NitinClient.c:30: warning: format not a string literal and no format arguments
+make: *** [NitinClient.o] Error 1
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()13:16:43 **** Build of configuration Build (GNU) for project Assignment 1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+13:16:44 **** Build of configuration Debug for project SampleSocket ****
+make all 
+Building file: ../NitinClient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"NitinClient.d" -MT"NitinClient.d" -o "NitinClient.o" "../NitinClient.c"
+../NitinClient.c:25:28: error: passing 'struct in_addr' to parameter of incompatible type 'void *'
+        inet_pton(AF_INET,argv[1],serverAddress.sin_addr);
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/arpa/inet.h:100:42: note: passing argument to parameter here
+int              inet_pton(int, const char *, void *);
+                                                    ^
+../NitinClient.c:27:17: warning: incompatible pointer types passing 'struct sockFd *' to parameter of type 'const struct sockaddr *' [-Wincompatible-pointer-types]
+        connect(sockFd,(struct sockFd*)&serverAddress, sizeof(serverAddress));
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/sys/socket.h:613:41: note: passing argument to parameter here
+int     connect(int, const struct sockaddr *, socklen_t) __DARWIN_ALIAS_C( connect);
+                                            ^
+../NitinClient.c:30:9: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        printf(sendBuff);
+               ^~~~~~~~
+2 warnings and 1 error generated.
+make: *** [NitinClient.o] Error 1
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()02:36:15 **** Build of configuration Build (GNU) for project Assignment 1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+02:36:17 **** Build of configuration Debug for project SampleSocket ****
+make all 
+Building file: ../NitinClient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"NitinClient.d" -MT"NitinClient.d" -o "NitinClient.o" "../NitinClient.c"
+../NitinClient.c:25:28: error: passing 'struct in_addr' to parameter of incompatible type 'void *'
+        inet_pton(AF_INET,argv[1],serverAddress.sin_addr);
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/arpa/inet.h:100:42: note: passing argument to parameter here
+int              inet_pton(int, const char *, void *);
+                                                    ^
+../NitinClient.c:27:17: warning: incompatible pointer types passing 'struct sockFd *' to parameter of type 'const struct sockaddr *' [-Wincompatible-pointer-types]
+        connect(sockFd,(struct sockFd*)&serverAddress, sizeof(serverAddress));
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/sys/socket.h:613:41: note: passing argument to parameter here
+int     connect(int, const struct sockaddr *, socklen_t) __DARWIN_ALIAS_C( connect);
+                                            ^
+../NitinClient.c:30:9: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        printf(sendBuff);
+               ^~~~~~~~
+2 warnings and 1 error generated.
+make: *** [NitinClient.o] Error 1
+Command canceled
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()02:50:35 **** Incremental Build of configuration Build (GNU) for project Assignment 1 ****
+make all 
+make: *** No rule to make target `all'.  Stop.
+02:50:36 **** Build of configuration Debug for project SampleSocket ****
+make all 
+Building file: ../NitinClient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"NitinClient.d" -MT"NitinClient.d" -o "NitinClient.o" "../NitinClient.c"
+../NitinClient.c:25:28: error: passing 'struct in_addr' to parameter of incompatible type 'void *'
+        inet_pton(AF_INET,argv[1],serverAddress.sin_addr);
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/arpa/inet.h:100:42: note: passing argument to parameter here
+int              inet_pton(int, const char *, void *);
+                                                    ^
+../NitinClient.c:27:17: warning: incompatible pointer types passing 'struct sockFd *' to parameter of type 'const struct sockaddr *' [-Wincompatible-pointer-types]
+        connect(sockFd,(struct sockFd*)&serverAddress, sizeof(serverAddress));
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/sys/socket.h:613:41: note: passing argument to parameter here
+int     connect(int, const struct sockaddr *, socklen_t) __DARWIN_ALIAS_C( connect);
+                                            ^
+../NitinClient.c:30:9: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        printf(sendBuff);
+               ^~~~~~~~
+2 warnings and 1 error generated.
+make: *** [NitinClient.o] Error 1
+
+**** Build of configuration Debug for project randomGenerator ****
+
+Nothing to build for project randomGenerator
+
+Invoking autoreconf in build directory: /Users/nitin/Documents/personal/Eclipse_c_ws/Assignment 1/
+
+sh -c "autoreconf -i" 
+sh: autoreconf: command not found
+
+Configuration failed with error
+Build stopped
+()

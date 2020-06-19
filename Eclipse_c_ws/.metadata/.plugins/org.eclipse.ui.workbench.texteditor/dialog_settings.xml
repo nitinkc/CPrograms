@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="263" key="DIALOG_WIDTH"/>
+		<item value="121" key="DIALOG_Y_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="509" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="initCirc" key="selection"/>
+		<list key="findhistory">
+			<item value="initcirc"/>
+			<item value="insert"/>
+			<item value="�"/>
+			<item value="inc_count"/>
+			<item value="watch_count"/>
+			<item value="count_threshold_cv"/>
+			<item value="count_mutex"/>
+			<item value="server"/>
+		</list>
+		<list key="replacehistory">
+			<item value=" "/>
+			<item value="A"/>
+			<item value="B"/>
+			<item value="cond"/>
+			<item value="lock"/>
+			<item value=""/>
+			<item value="sin"/>
+			<item value="bBuff_args"/>
+		</list>
+	</section>
+</section>

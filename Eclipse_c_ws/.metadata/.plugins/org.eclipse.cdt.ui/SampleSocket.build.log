@@ -1,0 +1,25 @@
+02:50:36 **** Build of configuration Debug for project SampleSocket ****
+make all 
+Building file: ../NitinClient.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"NitinClient.d" -MT"NitinClient.d" -o "NitinClient.o" "../NitinClient.c"
+../NitinClient.c:25:28: error: passing 'struct in_addr' to parameter of incompatible type 'void *'
+        inet_pton(AF_INET,argv[1],serverAddress.sin_addr);
+                                  ^~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/arpa/inet.h:100:42: note: passing argument to parameter here
+int              inet_pton(int, const char *, void *);
+                                                    ^
+../NitinClient.c:27:17: warning: incompatible pointer types passing 'struct sockFd *' to parameter of type 'const struct sockaddr *' [-Wincompatible-pointer-types]
+        connect(sockFd,(struct sockFd*)&serverAddress, sizeof(serverAddress));
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/include/sys/socket.h:613:41: note: passing argument to parameter here
+int     connect(int, const struct sockaddr *, socklen_t) __DARWIN_ALIAS_C( connect);
+                                            ^
+../NitinClient.c:30:9: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        printf(sendBuff);
+               ^~~~~~~~
+2 warnings and 1 error generated.
+make: *** [NitinClient.o] Error 1
+
+02:50:36 Build Finished (took 266ms)
+
